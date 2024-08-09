@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            JS
+        </title>
+        <style>
+            body {
+                background-color: green;
+                color: yellow;
+            }
+            #header {
+                text-align: center;
+            }
+            #o8 {
+                background-color: brown;
+                color: yellow;
+                text-align: center;  
+            }
+            #o88 {
+                background-color: brown;
+                color: yellow;
+                text-align: center;
+            }
+            #o9 {
+                background-color: brown;
+                color: yellow;
+                text-align: center;
+            }
+            #o10 {
+                background-color: brown;
+                color: yellow;
+            }
+            #o11 {
+                background-color: brown;
+                color: yellow;  
+            }
+            #o12 {
+                background-color: brown;
+                color: yellow;
+            }
+            #o13 {
+                background-color: brown;
+                color: yellow;
+            } 
+            #o14 {
+                background-color: brown;
+                color: yellow;
+            }
+            #o15 {
+                background-color: brown;
+                color: yellow;
+            }
+            #o16 {
+                background-color: brown;
+                color: yellow;
+            }
+            #o17 {
+                background-color: brown;
+                color: yellow;
+            }
+            #o18 {
+                background-color: brown;
+                color: yellow;
+            }
+            #o19 {
+                background-color: brown;
+                color: yellow;
+            }
+            #o20 {
+                background-color: brown;
+                color: yellow;
+            }
+            @media print {
+                body {
+                    background-color: brown;
+                }
+            }
+            #footer {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1 id="header"> TICKET FORM </h1>
+        </div> 
+        <div id="instruction_c">
+            <h1 id="ins"> Please at first read the information below the button before filling up the information then fill the ticket form </h1>  
+        </div>
+        <div id="lc1">
+            <label for="t"> Enter the way of transport : </label>
+        </div> <br>
+        <div id="ic1">
+            <input id="input1" type="text"> 
+        </div> <br>
+        <div id="lc2">
+            <label for="t"> Enter the transport name : </label>
+        </div> <br>
+        <div id="ic2">
+            <input id="input2" type="text">
+        </div> <br>
+        <div id="lc3">
+            <label for="t"> Enter the ownername of the tour : </label> 
+        </div> <br>
+        <div id="ic3">
+            <input id="input3" type="text">
+        </div> <br>
+        <div id="lc4">
+            <label for="t"> Enter the place of starting : </label>
+        </div> <br>
+        <div id="ic4">
+            <input id="input4" type="text">
+        </div> <br>
+        <div id="lc5">
+            <label for="t"> Enter the place of destination : </label>    
+        </div> <br>
+        <div id="ic5">
+            <input id="input5" type="text">
+        </div> <br>
+        <div id="lc6">
+            <label for="t"> Enter the passenger number : </label>
+        </div> <br>
+        <div id="ic6">
+            <input id="input6" type="text">
+        </div> <br>
+        <div id="lc7">
+            <label for="t"> Enter the payment : </label>
+        </div> <br>
+        <div id="ic7">
+            <input id="input7" type="text"> 
+        </div> <br>
+        <div id="bc">
+            <button id="button"> Click to get the ticket after filling the form </button>
+        </div> <br>
+        <div id="i1">
+            <h1 id="o1"> </h1>
+        </div>
+        <div id="i2">
+            <h1 id="o2"> </h1>
+        </div>
+        <div id="i3">
+            <h1 id="o3"> </h1>
+        </div>
+        <div id="i4">
+            <h1 id="o4"> </h1>
+        </div>
+        <div id="i5">
+            <h1 id="o5"> </h1>
+        </div>
+        <div id="i6">
+            <h1 id="o6"> </h1>
+        </div> 
+        <h1 id="o8"> </h1>
+        <h1 id="o9"> </h1>
+        <h1 id="o88"> </h1>
+        <h1 id="o10"> </h1>
+        <h1 id="o11"> </h1>
+        <h1 id="o12"> </h1>
+        <h1 id="o13"> </h1>
+        <h1 id="o14"> </h1>
+        <h1 id="o15"> </h1>
+        <h1 id="o7"> </h1>
+        <h1 id="o16"> </h1>
+        <h1 id="o17"> </h1>
+        <h1 id="o18"> </h1>
+        <h1 id="o19"> </h1>
+        <h1 id="o20"> </h1>
+        <div id="printc">
+            <button id="printb"> Click to print the ticket </button>
+        </div>
+        <p id="error"> </p>
+        <script>
+            try {
+                var call_r ;
+                function rules () {
+                    document.getElementById("o1").innerHTML = "Some informations are given below : " + "\n" ;
+                    document.getElementById("o2").innerHTML = "1.For traveling in the aeroplane , per person cost is 3805 taka." + "\n" ;
+                    document.getElementById("o3").innerHTML = "2.For travelling in the bus , per person cost is 505 taka." + "\n" ;
+                    document.getElementById("o4").innerHTML = "3.For travelling in the car , per person cost is 885 taka." + "\n" ;
+                    document.getElementById("o5").innerHTML = "4.For travelling in the train , per person cost is 375 taka." + "\n" ;
+                    document.getElementById("o6").innerHTML = "These ar the informations. Jazakallahu Khoiran." + "\n" ;
+                }
+                call_r = rules () ;
+                var btn = document.getElementById("button").onclick = function () {
+                    var way , transport , ownername , start , end , passenger , payment , call_f , div1 , div2 , div3 , div4 , div5 , div6 , div7 , div8 , div9 , div10 , div11 , div12 , div13 , div14 , div15 , div16 , div17 , div18 , div19 , div20 , div21 , div22 , div23 ; 
+                    way = document.getElementById("input1").value ;
+                    transport = document.getElementById("input2").value ;
+                    ownername = document.getElementById("input3").value ;
+                    start = document.getElementById("input4").value ; 
+                    end = document.getElementById("input5").value ;
+                    passenger = parseInt(document.getElementById("input6").value) ;
+                    payment = parseInt(document.getElementById("input7").value) ;
+                    function f (way , transport , ownername , start , end , passenger , payment) {
+                        var aeroplane , train , bus , car ;
+                        aeroplane = parseInt(passenger * 3805) ;
+                        bus = parseInt(passenger * 505) ;
+                        car = parseInt(passenger * 885) ;
+                        train = parseInt(passenger * 375) ;
+                        if ((payment >= aeroplane) || (payment >= bus) || (payment >= car) || (payment >= train)) {
+                            document.getElementById("o8").innerHTML = way ;
+                            document.getElementById("o9").innerHTML = transport ;
+                            document.getElementById("o88").innerHTML = start + " - " + end ;
+                            document.getElementById("o10").innerHTML = "Name of the Owner of the tour : " + ownername + "\n" ;
+                            document.getElementById("o11").innerHTML = "Starting place of the tour : " + start + "\n" ;
+                            document.getElementById("o12").innerHTML = "Destination of the tour : " + end + "\n" ;
+                            document.getElementById("o13").innerHTML = "Number of the passenger : " + passenger + "\n" ;
+                            document.getElementById("o14").innerHTML = "Payment of the tour : " + payment + "\n" ;
+                            document.getElementById("o15").innerHTML = "Payment Information : done" + "\n" ;
+                            if(way === "aeroplane" || way === "Aeroplane") {
+                                document.getElementById("o16").innerHTML = "Return money : " + (payment - aeroplane) + "\n" ; 
+                            } else if (way === "bus" || way === "Bus") {
+                                document.getElementById("o17").innerHTML = "Return money : " + (payment - bus) + "\n" ;
+                            } else if(way === "car" || way === "Car") {
+                                document.getElementById("o18").innerHTML = "Return money : " + (payment - car) + "\n" ;
+                            } else if (way === "train" || way === "Train") { 
+                                document.getElementById("o19").innerHTML = "Return money : " + (payment - train) + "\n" ;
+                            }
+                            document.getElementById("o20").innerHTML = "HAVE A SAFE JOURNEY AND NICE TOUR. JAZAKALLAHU KHOIRAN." + "\n" ;
+                        } else {
+                            document.getElementById("o7").innerHTML = "Sorry , your payment is insufficient.After completing the payment you will get the ticket." + "\n" ; 
+                        }
+                        return 1 ;    
+                    }   
+                    call_f = f (way , transport , ownername , start , end , passenger , payment) ;
+                    div1 = document.getElementById("header").innerHTML = " " ;
+                    div2 = document.getElementById("instruction_c").innerHTML = " " ;
+                    div3 = document.getElementById("lc1").innerHTML = " " ;
+                    div4 = document.getElementById("ic1").innerHTML = " " ;
+                    div5 = document.getElementById("lc2").innerHTML = " " ;
+                    div6 = document.getElementById("ic2").innerHTML = " " ;
+                    div7 = document.getElementById("lc3").innerHTML = " " ;
+                    div8 = document.getElementById("ic3").innerHTML = " " ;
+                    div9 = document.getElementById("lc4").innerHTML = " " ;
+                    div10 = document.getElementById("ic4").innerHTML = " " ;
+                    div11 = document.getElementById("lc5").innerHTML = " " ;
+                    div12 = document.getElementById("ic5").innerHTML = " " ;
+                    div13 = document.getElementById("lc6").innerHTML = " " ;
+                    div14 = document.getElementById("ic6").innerHTML = " " ;
+                    div15 = document.getElementById("lc7").innerHTML = " " ;
+                    div16 = document.getElementById("ic7").innerHTML = " " ;
+                    div17 = document.getElementById("bc").innerHTML = " " ;
+                    div18 = document.getElementById("i1").innerHTML = " " ;
+                    div19 = document.getElementById("i2").innerHTML = " " ;
+                    div20 = document.getElementById("i3").innerHTML = " " ;
+                    div21 = document.getElementById("i4").innerHTML = " " ;
+                    div22 = document.getElementById("i5").innerHTML = " " ;
+                    div23 = document.getElementById("i6").innerHTML = " " ;
+                }
+                var btnp = document.getElementById("printb").onclick = function () {
+                    var divp ;
+                    window.print() ;
+                    divp = document.getElementById("printc").innerHTML = " " ;           
+                }
+            }catch(error) {
+                document.getElementById("error").innerHTML = error.message ;
+            }
+        </script>
+        <footer id="footer"> Copy right </footer>
+    </body>
+</html>
